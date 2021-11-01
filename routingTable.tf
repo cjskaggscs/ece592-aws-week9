@@ -33,18 +33,18 @@ resource "aws_route_table" "week9-routeTablePublic" {
       gateway_id = aws_internet_gateway.week9-igw.id
 
       # The following was added because it seems without this, the routing table cannot be created
-      egress_only_gateway_id = ""
-      instance_id = ""
-      ipv6_cidr_block = ""
-      mat_gateway_id = ""
-      network_interface_id = ""
-      transit_gateway_id = ""
-      vpc_endpoint_id = ""
-      vpc_peering_connection_id = ""
-      carrier_gateway_id = ""
+      egress_only_gateway_id     = ""
+      instance_id                = ""
+      ipv6_cidr_block            = ""
+      mat_gateway_id             = ""
+      network_interface_id       = ""
+      transit_gateway_id         = ""
+      vpc_endpoint_id            = ""
+      vpc_peering_connection_id  = ""
+      carrier_gateway_id         = ""
       destination_prefix_list_id = ""
-      local_gateway_id = ""
-      nat_gateway_id = ""
+      local_gateway_id           = ""
+      nat_gateway_id             = ""
     },
   ]
 
