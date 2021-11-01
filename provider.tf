@@ -12,13 +12,13 @@ terraform {
 
   backend "s3" {
     bucket = "ece592-automation-skaggsc"
-    key = "state.week9"
+    key    = "state.week9"
     region = "us-east-1"
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
-  profile = "default"  # From a ~/.aws/credentials file.
+  region  = "us-east-1"
+  profile = "default" # From a ~/.aws/credentials file.
 }
 
